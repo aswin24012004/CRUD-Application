@@ -6,6 +6,91 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>To-Do</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+		}
+		.container {
+			background-color: burlywood;
+			min-height: 100vh;
+			display: grid;
+			place-items: center;
+			display: none;
+		}
+		#plus {
+			position: fixed;
+			bottom: 50px;
+			right: 70px;
+			font-size: 20px;
+			border: 3px solid black;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+		}
+		.contents h1 {
+			text-align: center;
+		}
+		.contents input {
+			padding: 5px;
+			font-size: 20px;
+			border: none;
+			border-bottom: 5px solid gray;
+		}
+		.contents button {
+			font-size: 15px;
+			background-color: blue;
+			color: white;
+			border-radius: 10px;
+			padding: 5px;
+			margin: 8px;
+		} 
+		#add-btn {
+			background-color: green;
+		}
+		#cancel {
+			background-color: red;
+		}
+		.contents h1 {
+			margin: 10px;
+		}
+		.headh1 {
+			background-color: blue;
+			text-align: center;
+			padding: 10px;
+		}
+		#view {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			padding: 20px;
+			border: 8px solid darkblue;
+		}
+		#view #viewbox{
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		#view .divition {
+			background-color: white;
+			padding: 15px;
+			margin: 10px;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			width: 250px;
+			text-align: center;
+			padding: 5px;
+		}
+		#view #viewbox h1,#view #viewbox p,#view #viewbox button{
+			padding: 5px;
+
+		}
+	</style>
 </head>
 <body>
 	<button id="plus">+</button>
